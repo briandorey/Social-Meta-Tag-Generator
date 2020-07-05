@@ -6,9 +6,11 @@ This simple helper function generates social media meta tags for web pages for G
 In SocialMeta.cs Edit lines 47 and 48 to add your Twitter ID. Edit line 56 to add your business or website name.
 
 This demo uses asp.net master pages and you need to include this tag in the HEAD section of the page.
+
     <asp:Literal ID="LiteralMeta" runat="server"></asp:Literal>
 
 This to disable the normal html title tag, add:
+
     <title visible="false" runat="server"><%-- hack to turn the auto title off --%></title>
 
 In the page load function you add the new Social Meta code with the following:
